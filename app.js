@@ -8,6 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 const CONNECTION_STRING = 'mongodb+srv://satvikkhetan:WebDevAssignment2022@cluster0.qszkev9.mongodb.net/?retryWrites=true&w=majority';
+//const CONNECTION_STRING = 'mongodb://localhost:27017/tuiter';
 mongoose.connect(CONNECTION_STRING);
 HelloController(app)
 UsersController(app)
